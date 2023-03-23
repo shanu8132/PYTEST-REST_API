@@ -243,7 +243,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 23-Mar-2023 at 16:06:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 23-Mar-2023 at 23:55:32 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -259,7 +259,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.4</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 26.13 seconds. </p>
+    <p>4 tests ran in 30.29 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -275,35 +275,49 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_CRUD_api.py::test_can_call_endpoint</td>
-          <td class="col-duration">2.07</td>
+          <td class="col-duration">2.06</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m root:conftest.py:11 Starting the Json Server...
+[32mINFO    [0m root:conftest.py:14 Json Server started and the process id is : &lt;subprocess.Popen object at 0x000001E97193F448&gt;<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_CRUD_api.py:10 Checking if the endpoint is working or not
+[32mINFO    [0m root:test_CRUD_api.py:13 Response code post starting the server : 200<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_CRUD_api.py::test_can_create_user</td>
-          <td class="col-duration">4.17</td>
+          <td class="col-duration">4.18</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_CRUD_api.py:18 Creating a new user
+[32mINFO    [0m root:test_CRUD_api.py:22 Response of create user api : 201
+[32mINFO    [0m root:test_CRUD_api.py:29 Validating the user details created via get api ...
+[32mINFO    [0m root:test_CRUD_api.py:35 User details verified successfully<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_CRUD_api.py::test_can_update_task</td>
-          <td class="col-duration">8.30</td>
+          <td class="col-duration">8.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_CRUD_api.py:41 Creating a new user...
+[32mINFO    [0m root:test_CRUD_api.py:44 Status code of the create user api : 201
+[32mINFO    [0m root:test_CRUD_api.py:48 updating the user details via PATCH api...
+[32mINFO    [0m root:test_CRUD_api.py:56 Response of the update api : 200
+[32mINFO    [0m root:test_CRUD_api.py:59 Validating the changes made to the user details...
+[32mINFO    [0m root:test_CRUD_api.py:65 User details verified successfully post updating<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_CRUD_api.py::test_can_delete_user</td>
-          <td class="col-duration">6.22</td>
+          <td class="col-duration">6.26</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_CRUD_api.py:70 Creating a user
+[32mINFO    [0m root:test_CRUD_api.py:74 User Created Successfully
+[32mINFO    [0m root:test_CRUD_api.py:81 Getting the details of the created user via GET api, response : 200
+[32mINFO    [0m root:test_CRUD_api.py:84 Deleting the user...
+[32mINFO    [0m root:test_CRUD_api.py:87 User deleted successfully...<br/></div></td></tr></tbody></table></body></html>
